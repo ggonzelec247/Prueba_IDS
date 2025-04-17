@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block titulo %} La Tierra de la Sabiduría y el Conocimiento {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/sumeru/sumeru.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="card">
+  <div class="marco_titulo">
+      <h1> Sumeru </h1>
+  </div>
+
+  <div id="sello_dendro">
+      <a href="/cuento">
+        <img src="{{url_for('static', filename='/images/naciones/sumeru/sello_dendro.png')}}" alt="sello_dendro">
+      </a>
+  </div>
+
+  <img src="{{ url_for('static', filename='images/naciones/sumeru/sumeru_fondo.png')}}" alt="fondo" style="width: 1234px; height: 100vh;">
+</div>
+
+
+{% endblock %}
+
+

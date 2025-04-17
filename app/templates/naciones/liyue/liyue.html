@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %} La nacion de los contratos {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/liyue_style/liyue.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="card">
+
+  <div class="marco_titulo">
+    <h1> Liyue </h1>
+  </div>
+
+  <img src="{{url_for('static', filename='images/naciones/liyue/liyue.jpg')}}" alt="fondo" style="height: 100vh;">
+
+  <div id="sello_liyue">
+    <a href="/contrato">
+      <img src="{{url_for('static', filename='images/naciones/liyue/sello_geo.png')}}" alt="sello_geo">
+    </a>
+  </div>
+
+</div>
+
+{% endblock %}

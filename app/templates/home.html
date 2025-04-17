@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block titulo %} Home {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/menu/home.css') }}">
+{% endblock %}
+{% block main %}
+
+<div>
+    <div class="marco_titulo">
+        <h1>El Libro del Viajero:</h1>
+    </div>
+    
+    
+    <div id="texto">
+        
+        <h2>Un Recorrido por las Naciones de Teyvat</h2>
+        <br>
+        <p>
+            Bienvenido, intrépido aventurero, a las páginas del Libro del Viajero. Un compendio de historias y secretos que hablan de las naciones que dan vida al vasto mundo de Teyvat. Como un explorador eterno, tu misión será recorrer estos inmensos horizontes, desvelar las culturas que laten en cada rincón y enfrentarte a los desafíos que aguardan en las sombras de cada tierra. Desde los vientos libres de Mondstadt hasta las tierras enigmáticas de Sumeru, cada nación susurra su propia leyenda, guarda a sus dioses y revela misterios que aguardan ser desvelados.
+            Aquí, en este viaje sin fin, tendrás la oportunidad de forjar tu propio destino. Crea a tu héroe, único y valiente, y acompáñalo en esta travesía a través de mundos desconocidos. Personaliza sus habilidades, elige su arma, y prepara un equipo que se adaptará a cada desafío, a cada batalla, a cada susurro del viento. Cada nación pondrá a prueba tus sentidos, desafiará tu astucia y exigirá que equilibres el poder de tus personaje con una sabiduría que solo se alcanza a medida que avanzas.
+            El Libro del Viajero será tu fiel compañero en esta travesía. A medida que explores, hallarás fragmentos de sabiduría que te guiarán, y relatos de aquellos que caminaron antes que tú. Pero recuerda, este viaje es eterno; siempre habrá más por descubrir en las tierras de Teyvat, y tu historia apenas comienza a escribir sus primeros capítulos.
+        </p>
+    </div>
+    
+</div>
+
+{% endblock %}

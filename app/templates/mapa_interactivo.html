@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block titulo %} Mapa de tevyat {% endblock %}
+
+{% block main %}
+<div class="map-container">
+    <img src="{{ url_for('static', filename='images/mapa/mapa_teyvat.png') }}" alt="Mapa de Teyvat" class="map-image">
+
+    <div class="pins">
+
+        <a href="/mondstadt">
+            <img src="{{ url_for('static', filename='images/mapa/teleport.jpg') }}" alt="Pin_Mondstadt" class="pin" style
+            ="top: 130px; left: 729px;">
+        </a>
+
+        <a href="/liyue">
+            <img src="{{ url_for('static', filename='images/mapa/teleport.jpg') }}" alt="Pin_Liyue" class="pin" style
+            ="top: 270px; left: 674px;">
+        </a>
+
+        <a href="/inazuma">
+            <img src="{{ url_for('static', filename='images/mapa/teleport.jpg') }}" alt="Pin_Inazuma" class="pin" style
+            ="top: 403px; left: 913px;">
+        </a>
+
+        <a href="/sumeru">
+            <img src="{{ url_for('static', filename='images/mapa/teleport.jpg') }}" alt="Pin_Sumeru" class="pin" style
+            ="top: 248px; left: 564px;">
+        </a>
+
+        <a href="/natlan">
+            <img src="{{ url_for('static', filename='images/mapa/teleport.jpg') }}" alt="Pin_Natlan" class="pin" style
+            ="top: 334px; left: 241px;">
+        </a>
+
+        <a href="/fontaine">
+            <img src="{{ url_for('static', filename='images/mapa/teleport.jpg') }}" alt="Pin_Fontaine" class="pin" style
+            ="top: 61px; left: 464px;">
+        </a>
+
+        <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+
+    </div>
+
+    <div class="marco_titulo">
+        <h1>Bienvenidos a Teyvat</h1>
+    </div>
+
+{% endblock %}

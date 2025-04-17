@@ -1,0 +1,20 @@
+#contrato {
+    margin: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: x-small;
+    width: 388.5px;
+    height: 521.8px;
+    top: 300px;
+    padding-top: 10px;
+    left: 667.5px;
+}
+
+#marco {
+    position: absolute;
+    background-color: #ffffff00;
+}

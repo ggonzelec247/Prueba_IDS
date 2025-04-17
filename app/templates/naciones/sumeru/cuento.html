@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block titulo %} La Tierra de la Sabiduría y el Conocimiento {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/sumeru/sumeru.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="card">
+    <article id="cuento">
+        <p> Desde tiempos antiguos, Sumeru ha sido un lugar mágico, lleno de sabiduría, donde el conocimiento crece entre hermosos bosques y altas montañas. </p>
+        <p> Al principio, Sumeru era un refugio de paz, donde sabios y estudiantes se reunían para compartir sus ideas y aprender juntos. Pero, con el tiempo, las ambiciones comenzaron a surgir. La Academia de Sumeru, un lugar especial para el conocimiento, se convirtió en un campo de discusiones, y algunos olvidaron que la verdadera sabiduría viene de ser amables y de conectar con los demás. </p>
+        <p>He visto a mi pueblo sufrir, atrapado entre querer avanzar y cuidar sus raíces...</p>
+        <p> He visto a mi pueblo sufrir, atrapado entre querer avanzar y cuidar sus raíces. Aprender no debe ser un viaje solitario; cada descubrimiento debe ayudar a todos. </p>
+        <p> En mi camino, he aprendido que la verdadera sabiduría no solo está en los libros, sino en el corazón de cada persona. Espero que, a pesar de los desafíos, Sumeru siga siendo un lugar donde la sabiduría florezca, un hogar para quienes buscan no solo conocer, sino también comprender y amar." </p>
+      </article>
+  
+      <img src="{{ url_for('static', filename='images/naciones/sumeru/fondo.png')}}" alt="fondo" style="width: 1234px; height: 100vh;">
+  
+</div>
+
+{% endblock %}

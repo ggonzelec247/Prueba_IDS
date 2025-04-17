@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title> {% block titulo %} Los viajeros de Teyvat {% endblock %} </title>
+            {% block base_css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">{% endblock %}
+
+            {% block extra_css %}{% endblock %}
+
+        </head>
+        <body>
+            {% block barra_menu %}
+            <div class="barra_menu" >
+                <div class="link">
+
+                    <a href="/" class="icon">
+                        <img src="{{ url_for('static', filename='images/menu/home.png') }}" alt="home" >
+                        <span>home</span>
+                    </a>
+
+                    <a href="/mapa_interactivo" class="icon">
+                        <img src="{{ url_for('static', filename='images/menu/mapa.png') }}" alt="mapa" >
+                        <span>Mapa</span>
+                        <span>interactivo</span>
+                    </a>
+
+                    <a href="/personaje" class="icon">
+                        <img src="{{ url_for('static', filename='images/menu/personajes.png') }}" alt="personajes" >
+                        <span>personajes</span>
+                    </a>
+
+                    <a href="/equipos" class="icon">
+                        <img src="{{ url_for('static', filename='images/menu/equipos.png') }}" alt="equipos" >
+                        <span>Equipos</span>
+                    </a>
+
+                    <a href="/guia" class="icon">
+                        <img src="{{ url_for('static', filename='images/menu/guia.png') }}" alt="guia" >
+                        <span>Guia</span>
+                    </a>
+
+                    <a href="/nosotros" class="icon">
+                        <img src="{{ url_for('static', filename='images/menu/nosotros.png') }}" alt="nosotros" >
+                        <span>nosotros</span>
+                    </a>
+                </div>
+            </div>
+            {% endblock %}
+
+                {% block main %}{% endblock %}
+
+                {% block extra_js %}{% endblock %}
+        </body>
+    </html>

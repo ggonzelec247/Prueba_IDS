@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block titulo %} Morax {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/liyue_style/contrato.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="card">
+    <div id="marco">
+        <img src="{{ url_for('static', filename='/images/naciones/liyue/marco_liyue.png') }}" alt="marco" style="width: 1023px; height: 98vh;">
+    </div>
+    
+    <div id="contrato">
+        <h2> Contrato de Exploración en Liyue </h2>
+        <p> 
+        <h3> Partes Contratantes:</h3>
+        El Viajero y la Nación de Liyue
+        </p>
+        <h3>
+            Objeto del Contrato:
+        </h3>
+        <p>
+            Este acuerdo permite la exploración de Liyue, donde cada rincón refleja su rica historia y el valor de los contratos.
+        </p>
+        <h4>
+            Considerando:
+        </h4>
+        Orígenes Humildes: Liyue comenzó como un monte vacío. A través del esfuerzo conjunto, se transformó en una nación próspera y vibrante.
+        <br> La Nación de los Contratos: En este lugar, el comercio trasciende el simple intercambio de bienes; cada acuerdo es un pilar fundamental de confianza y compromiso.
+        <br> El Puerto Principal: Este puerto, centro neurálgico de comercio, simboliza la conexión entre personas y culturas, sustentado en la fuerza de los contratos.
+        <h4>
+            Cláusulas:
+        </h4>
+        Derecho a Explorar: El Viajero se compromete a descubrir y valorar la historia de Liyue.
+        <br>
+        Respeto y Aprendizaje: Cada interacción con la cultura local será un acto de respeto y reconocimiento de su sabiduría.
+        <br>
+        Honor y Compromiso: La exploración reafirma el valor de las promesas, esenciales para el crecimiento y la prosperidad.
+        <h2>Conclusión:</h2>
+        <p>
+            Al firmar este contrato, el Viajero acepta sumergirse en la rica tapestria de Liyue, un lugar donde la historia y el compromiso guían el camino hacia un futuro brillante.
+        </p>
+    </div>
+
+    <div class="fondo">
+        <img src="{{ url_for('static', filename='images/naciones/liyue/fondo_liyue.png') }}" style="width: 1021px;
+    height: 100vh;" alt="fondo">
+    </div>
+
+</div>
+{% endblock %}

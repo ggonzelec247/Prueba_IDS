@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block titulo %} Equipos {% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/menu/equipos.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="card">
+  <div class="container">
+    {% if equipos %}
+      
+      <div class="table_container">
+        <h1>Listado de equipos</h1>
+        <br>
+        <table class="styled_table">
+          <tr>
+            <th>ID</th>
+            <th>Nombre del Equipo</th>
+            <th>Integrante 1</th>
+            <th>Integrante 2</th>
+            <th>Integrante 3</th>
+            <th>Integrante 4</th>
+            <th>Promedio de ataque</th>
+            <th>Acción</th>
+          </tr>
+          {% for equipo in equipos %}
+          <tr>
+            <td>{{ equipo.id }}</td>
+            <td>{{ equipo.nombre_equipo }}</td>
+            <td>{{ personajes_dic[equipo.ID_integrante_1] }}</td>
+            <td>{{ personajes_dic[equipo.ID_integrante_2] }}</td>
+            <td>{{ personajes_dic[equipo.ID_integrante_3] }}</td>
+            <td>{{ personajes_dic[equipo.ID_integrante_4] }}</td>
+            <td>{{ equipo.promedio_ataque }}</td>
+            <td>
+              <form method="POST" action="{{ url_for('delete_equipo_f', equipo_id=equipo.id) }}">
+                <button type="submit">Eliminar</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% else %}
+      <h1>Equipos</h1>
+      <p>En esta página podrás combinar los personajes creados desde la pagina "Personaje". Al crear un equipo se mostrara en la tabla el promedio de ataque de los equipos que hayas creado</p>
+    {% endif %}
+  
+    
+    <form method="POST" action="{{ url_for('add_equipo_f') }}">
+      <h2>Agregar un nuevo equipo:</h2>
+      <br>
+      <label for="nombre_equipo">Nombre del equipo:</label>
+      <input type="text" id="nombre_equipo" name="nombre_equipo" required>
+      <br><br>
+  
+      <label for="ID_integrante_1">Integrante 1:</label>
+      <select id="ID_integrante_1" name="ID_integrante_1" required>
+        <option value="" disabled selected>Elige un personaje</option>
+        {% for personaje in personajes %}
+        <option value="{{personaje.id}}">{{personaje.nombre}}</option>
+        {% endfor %}
+      </select><br><br>
+      
+      <label for="ID_integrante_2">Integrante 2:</label>
+      <select id="ID_integrante_2" name="ID_integrante_2" required>
+        <option value="" disabled selected>Elige un personaje</option>
+        {% for personaje in personajes %}
+        <option value="{{personaje.id}}">{{personaje.nombre}}</option>
+        {% endfor %}
+      </select><br><br>
+  
+      <label for="ID_integrante_3">Integrante 3:</label>
+      <select id="ID_integrante_3" name="ID_integrante_3" required>
+        <option value="" disabled selected>Elige un personaje</option>
+        {% for personaje in personajes %}
+        <option value="{{personaje.id}}">{{personaje.nombre}}</option>
+        {% endfor %}
+      </select><br><br>
+  
+      <label for="ID_integrante_4">Integrante 4:</label>
+      <select id="ID_integrante_4" name="ID_integrante_4" required>
+        <option value="" disabled selected>Elige un personaje</option>
+        {% for personaje in personajes %}
+        <option value="{{personaje.id}}">{{personaje.nombre}}</option>
+        {% endfor %}
+      </select><br><br>
+      <!--
+      <label for="promedio_ataque">Promedio de Ataque:</label>
+      <input type="number" id="promedio_ataque" name="promedio_ataque" required>
+      <br><br>
+      -->
+  
+      <button type="submit">Crear equipo</button>
+    </form>
+  </div>
+</div>
+
+
+{% endblock %}

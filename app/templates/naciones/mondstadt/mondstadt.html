@@ -1,0 +1,68 @@
+
+{% extends "base.html" %}
+
+{% block titulo %} La nacion de la LIBERTAD {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/mondstadt_style/mondstadt.css') }}">
+{% endblock %}
+
+{% block main %}
+
+    <div class="card">
+        <div class="marco_titulo">
+            <h1> Mondstadt </h1>
+        </div>
+
+        <div id="sello_anemo">
+            <a href="/sonata">
+              <img src="{{url_for('static', filename='/images/naciones/mondstadt/sello_anemo.jpg')}}" alt="sello_anemo">
+            </a>
+        </div>
+
+        <img src="{{ url_for('static', filename='images/naciones/mondstadt/mondstadt.jpeg') }}" style="height: 100vh;">
+    </div>
+
+
+{% endblock %}
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/mondstadt_style/mondstadt.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-side">
+            <img src="{{ url_for('static', filename='images/naciones/mondstadt/fondo_lore_Venti.jpg') }}" alt="Imagen" class="imagen">
+        </div>
+
+        <div class="right-side">
+            <div class="title-box">
+                <p class="title-line"> La nacion de la LIBERTAD</p>
+            </div>
+            <div class="contenido">
+
+
+                <a href="{{ url_for('personaje') }}" class="redirect-button">
+                    <img src="{{ url_for('static', filename='images/ping-venti.jpg') }}" alt="Ir a Personaje">
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+-->

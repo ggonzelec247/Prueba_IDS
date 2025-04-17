@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo %} Info del personaje {% endblock %}
+
+{% block main %}
+
+<h1> Stats de { personaje.nombre } </h1>
+
+<table>
+  <tr>
+    <th> Stat </th>
+    <th> valor </th>
+  </tr>
+    <td> edad </td>
+    <td> { personaje.edad } </td>
+
+</table>
+
+{% endblock %}

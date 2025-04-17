@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %} Barbatos {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/naciones/mondstadt_style/mondstadt.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="card">
+
+    <div id="Venti">
+        <img src="{{url_for('static', filename='/images/naciones/mondstadt/fondo_lore_Venti.jpg')}}" alt="venti">
+    </div>
+
+    <div id="sonata">
+        <p>En Monstadt, donde el viento danza,</p>
+        <p>las risas flotan, la vida avanza.</p>
+        <p>Cielos de azul profundo, un pueblo feliz,</p>
+        <p>cada latido es un suave matiz.</p>
+        <br>
+        <p>En el campo, dientes de león brillan,</p>
+        <p>como estrellas doradas que sueños destilan.</p>
+        <p>Símbolos ardientes de fuerza y fe,</p>
+        <p>un canto a la vida, su esencia es ley.</p>
+        <br>
+        <p>Viñedos dorados abrazan el sol,</p>
+        <p>frutos que desafían al frío y al rol.</p>
+        <p>El vino rebosante, risas en festín,</p>
+        <p>celebra el esfuerzo que nunca tuvo fin.</p>
+        <br>
+        <p>Oh, Monstadt, susurro de libertad,</p>
+        <p>mi corazón vuela, sintiendo la verdad.</p>
+        <p>Tu historia se alza, un viento en mi piel,</p>
+        <p>y en cada rincón, tu eco es mi laurel.</p>
+        <br>
+    </div>
+    <img src="{{url_for('static', filename='images/naciones/mondstadt/fondo_Mondstadt.png')}}" alt="fondo">
+
+</div>
+
+{% endblock %}

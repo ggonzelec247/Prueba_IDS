@@ -1,0 +1,75 @@
+[33mcommit 344368a4d9c4d4cd0f53462a16f65a813483ae56[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sofía_Belén_Noriega_Nuti <snoriega@fi.uba.ar>
+Date:   Tue Nov 26 21:20:45 2024 +0000
+
+    Acomodo en app y templates
+
+[33mcommit f14eb2f350082d0eaede5d4b8da1d18d97f145db[m
+Author: lazaro lopez <lalopez@fi.uba.ar>
+Date:   Tue Nov 26 14:54:44 2024 -0300
+
+    introduccion de edit_personaje.css
+
+[33mcommit 5e1211a8e3f3a13a0d413050cf2997e64b356cb4[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Mon Nov 25 01:19:11 2024 -0300
+
+    Mergear cambios restantes
+
+[33mcommit 3997b577444497f66cb0461b05a9b1002b3bcc1c[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 18:03:26 2024 -0300
+
+    Agregar dependencias manualmente debido a errores con el merge
+
+[33mcommit 0b2380af5d711cd2033749b13d6d4822d4a07cdd[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 18:01:23 2024 -0300
+
+    Agregar a mano cambios de personajes.py dado que me equivoque en el uso del merge
+
+[33mcommit 918b2b869059b5413d669b6a74d265227edb1145[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 17:54:12 2024 -0300
+
+    Agregar manualmente cambios de app.py dado que me equivoque con el merge
+
+[33mcommit 698c07d1a1add8987879a0235489b480e839141f[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 17:51:10 2024 -0300
+
+    Agregar manualmente archivos de api dado que me equivoque con el merge
+
+[33mcommit b8d16565dec20bd73c7846da6a804110e0505542[m[33m ([m[1;31morigin/test[m[33m, [m[1;32mtest[m[33m)[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 13:43:17 2024 -0300
+
+    Corregir comillas en el href
+
+[33mcommit 3462d781b69cf1a403cbdd4a7d2f8eb6f75ce4ce[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 13:27:32 2024 -0300
+
+    Revert "resolviendo conflictos"
+    
+    This reverts commit 0b8cc4a650034d12f0e5688b2d78598f3c58041d, reversing
+    changes made to 79ca30dcc71157a2ce5e262cca22ab5c1ae88d05.
+
+[33mcommit 0b8cc4a650034d12f0e5688b2d78598f3c58041d[m
+Merge: 79ca30d 308d169
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 13:22:30 2024 -0300
+
+    resolviendo conflictos
+
+[33mcommit 308d1699e16323c41144997b8bb6d938ee676c44[m
+Author: fsiciliano21 <fsiciliano@fi.uba.ar>
+Date:   Sun Nov 24 12:52:40 2024 -0300
+
+    Agregar dependencia Flask-SQLAlchemy
+
+[33mcommit 240f4e94ca629e156f8cc608e88880441abc47f9[m
+Author: agustinjulian <ajulian@fi.uba.ar>
+Date:   Sun Nov 24 05:15:34 2024 -0300
+
+    Desarrolle la pagina Personajes para interactuar con la tabla con las funciones creadas en el back end

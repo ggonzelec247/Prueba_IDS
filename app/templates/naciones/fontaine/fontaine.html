@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block titulo %} Fonteine {% endblock %}
+
+{% block main %}
+
+
+
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        mostrar_alerta("{{ nombre_nacion }}");
+        redireccionar("mapa_interactivo");
+    </script>
+{% endblock %}

@@ -1,0 +1,54 @@
+.about_us {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(128, 53, 187, 1) 0%, rgba(218, 121, 204, 1) 100%);
+    border-radius: 20px;
+    margin: 30px auto;
+    max-width: 90%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    
+}
+
+.about_us_titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.tabla_nombres {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tabla_nombres th, .tabla_nombres td {
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.tabla_nombres th {
+    background-color: rgba(128, 53, 187, 0.8);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.tabla_nombres td {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+}
+
+.tabla_nombres tr:nth-child(even) {
+    background-color: rgba(200, 200, 255, 0.5);
+}
+
+.tabla_nombres tr:hover {
+    background-color: rgba(128, 53, 187, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
